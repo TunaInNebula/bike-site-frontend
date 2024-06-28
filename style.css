@@ -1,0 +1,108 @@
+body, html {
+    background-color: aliceblue;
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-inner {
+    height: 900px; /* veya istediğiniz bir yükseklik değeri */
+}
+.carousel-item img {
+    max-width: 100%;
+    height: 900px;
+}
+
+h2 {
+    border-radius: 15px;
+    width: 100%;
+    /* border-bottom: none; */
+    /* border-left: none;
+    border-right: none; */
+    border-top: 2px solid #000000; /* Alt kenarı daha kalın yap */
+    border-bottom: 2px solid #000000; /* Alt kenarı daha kalın yap */
+
+}
+
+.navbar-nav {
+    flex: 1;
+    justify-content: center;
+}
+
+.col {
+    flex: 1;
+    transition: 0.5s;
+}
+
+.col a{
+    width: 100%;
+    border-bottom: 20px;
+}
+
+.col:hover {
+    flex: 1.2;
+}
+
+#col-top-mid {
+    margin: 1px;
+    padding: 0;
+}
+
+#col-top-left {
+    padding: 0;
+    margin-top: 1px;
+}
+
+#col-top-right {
+    padding: 0;
+    margin-top: 1px;
+}
+
+.col img {
+    width: 100%;
+    height: 330px;
+    border-radius: 10px;
+}
+
+
+#mid-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Şeridin arka plan rengi */
+    height: 40px; /* Şeridin yüksekliği */
+    overflow: hidden; /* Taşan içeriği gizle */
+}
+
+.marquee {
+    white-space: nowrap; /* Metni tek satırda tut */
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Konteynerin tam genişliğini kapla */
+}
+
+.marquee-content {
+    display: inline-block;
+    font-size: 44px; /* Metin boyutu */
+    color: #333; /* Metin rengi */
+    animation: marquee 20s linear infinite; /* Animasyonu tanımla */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%); /* Metin başlangıçta sağda */
+    }
+    100% {
+        transform: translateX(-100%); /* Metin solda bitiyor */
+    }
+}
+
+.custom-button {
+    border-radius: 30px;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 5px solid #0e3b19; /* Alt kenarı daha kalın yap */
+}
