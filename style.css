@@ -180,7 +180,7 @@ a {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 5px solid #00d1cd; /* Alt kenarı daha kalın yap */
+    border-bottom: 2.5px solid #00d1cd; /* Alt kenarı daha kalın yap */
     transition: 0.5s;
 }
 .custom-dropdown {
@@ -199,4 +199,22 @@ a {
 
 .btn-scroll:hover {
     background-color: #0efffb;
+}
+
+.footer {
+    height: 300px;
+    background-color: aliceblue;
+}
+
+.colfooter {
+    flex: 1;
+}
+.colfooter:hover {
+    flex: 1;
+}
+
+.imgfooter {
+    width: 40px;
+    height:auto;
+    border-radius: 10px;
 }
