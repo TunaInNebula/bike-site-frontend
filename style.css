@@ -191,14 +191,16 @@ a {
 
 
 .btn-scroll {
-    background-color: #00d1cd;
+    background-color: aliceblue;
+    border: 1px solid #f9ffff;
     font-size: larger;
-    color: aliceblue;
+    color: rgb(67, 70, 73);
     width: 200px;
+    transition: 0.3s;
 }
 
 .btn-scroll:hover {
-    background-color: #0efffb;
+    background-color: #474a4a;
 }
 
 .footer {

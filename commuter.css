@@ -1,3 +1,11 @@
+body {
+    background-color: aliceblue;
+}
+
+.urun {
+    background-color: rgba(128, 128, 128, 0.324);
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -20,6 +28,9 @@ select:focus {
     width: 100%;
     background-color: aliceblue;
 }
+#nav-2 {
+    z-index: 2;
+}
 
 .nav-item {
     margin-top: 0;
@@ -39,8 +50,15 @@ select:focus {
   .urun {
     margin: 10px;
     padding: 15px;
-    border: 1px solid #00d1cd;
+    border: 2px solid rgba(128, 128, 128, 0.155);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* X, Y, Blur, Spread, Color */
+    transition: box-shadow 0.3s ease-in-out;
     border-radius: 30px;
+    
+  }
+  .col.urun:hover {
+    box-shadow: 0 8px 16px #00d1ce3a;
+    border: 2px solid #00d1ce97;
   }
   
   .urun-adi {
@@ -50,6 +68,15 @@ select:focus {
   
   .urun-fiyati {
     font-weight: bold;
+    background-color: rgba(128, 128, 128, 0.627);
+    border-radius: 0 0 25px 25px;
+    margin-left: 33px;
+    color: aliceblue;
+    margin-top: 3%;
+    width: 88%;
+    scale: 1.2;
+    height: 11%;
+
   }
   
   #fiyat-filtresi {
@@ -71,7 +98,7 @@ select:focus {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 5px solid #00d1cd; /* Alt kenarı daha kalın yap */
+    border-bottom: 5px solid grey; /* Alt kenarı daha kalın yap */
     transition: 0.5s;
 }
 
@@ -84,6 +111,27 @@ select:focus {
     border-bottom: 5px solid #00d1cd; /* Alt kenarı daha kalın yap */
 }
 
+.custom-button-2 {
+
+    border-radius: 30px;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #00d1cd; /* Alt kenarı daha kalın yap */
+    transition: 0.5s;
+}
+.custom-button-2:hover {
+    color: #00d1cd;
+    border-radius: 30px;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #00d1cd; /* Alt kenarı daha kalın yap */
+    transition: 0.5s;
+}
+
 .custom-button-3 {
     border-radius: 10px;
     width: 100%;
@@ -93,6 +141,13 @@ select:focus {
     border-bottom: 2.5px solid #00d1cd; /* Alt kenarı daha kalın yap */
     transition: 0.5s;
 }
+
+.custom-dropdown {
+    border: 1px solid #00d1cd;
+    border-radius: 15px;
+    max-height: 190px;
+}
+
 
 
   
