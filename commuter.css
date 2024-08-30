@@ -42,12 +42,14 @@ select:focus {
 .nav-link:hover {
     color: #00d1cd;
 }
+
+
 .urunler {
     display: flex;
     flex-wrap: wrap;
   }
   
-  .urun {
+.urun {
     margin: 10px;
     padding: 15px;
     border: 2px solid rgba(128, 128, 128, 0.155);
@@ -55,18 +57,18 @@ select:focus {
     transition: box-shadow 0.3s ease-in-out;
     border-radius: 30px;
     
-  }
-  .col.urun:hover {
+}
+.col.urun:hover {
     box-shadow: 0 8px 16px #00d1ce3a;
     border: 2px solid #00d1ce97;
-  }
+}
   
-  .urun-adi {
+.urun-adi {
     font-size: 18px;
     margin-bottom: 5px;
-  }
+}
   
-  .urun-fiyati {
+.urun-fiyati {
     font-weight: bold;
     background-color: rgba(128, 128, 128, 0.627);
     border-radius: 0 0 25px 25px;
@@ -76,20 +78,29 @@ select:focus {
     width: 88%;
     scale: 1.2;
     height: 11%;
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    font-size: 24px;          /* Adjust font size as needed */
+    text-align: center;       /* Align text to center */
 
-  }
+
+}
   
-  #fiyat-filtresi {
+
+    
+
+#fiyat-filtresi {
     border-top: none;
     border-left: none;
     border-right: none;
     border-bottom: 3px solid #00d1cd;
     border-radius: 30px;
-  }
+}
 
 
 
-  #filter-container {
+#filter-container {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0); /* Gölge ekleyin, isteğe bağlı */
 }
 .custom-button {

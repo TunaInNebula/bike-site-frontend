@@ -48,15 +48,16 @@ function applyFilter(secilenFiyat) {
   urunler.forEach(function(urun) {
       const urunFiyati = parseInt(urun.querySelector('.urun-fiyati').textContent);
       if (secilenFiyat === '' || urunFiyati <= secilenFiyat) {
-          urun.style.display = 'block';
+          urun.style.display = 'block'; // Ürünleri göster
       } else {
-          urun.style.display = 'none';
+          urun.style.display = 'none'; // Ürünleri gizle
       }
   });
 }
 
+
 function applySort(siralamaTuru) {
-  const urunlerArray = Array.from(urunler);
+  const urunlerArray = urunler.filter(urun => urun.style.display !== 'none'); // Yalnızca görünen ürünler
   urunlerArray.sort(function(a, b) {
       const fiyatA = parseInt(a.querySelector('.urun-fiyati').textContent);
       const fiyatB = parseInt(b.querySelector('.urun-fiyati').textContent);
@@ -71,14 +72,5 @@ function applySort(siralamaTuru) {
   const parentElement = document.querySelector('.row.urunler');
   parentElement.innerHTML = '';
 
-  for (let i = 0; i < urunlerArray.length; i += 3) {
-      const row = document.createElement('div');
-      row.className = 'row urunler';
-
-      for (let j = i; j < i + 3 && j < urunlerArray.length; j++) {
-          row.appendChild(urunlerArray[j]);
-      }
-
-      parentElement.appendChild(row);
-  }
+  urunlerArray.forEach(urun => parentElement.appendChild(urun));
 }
